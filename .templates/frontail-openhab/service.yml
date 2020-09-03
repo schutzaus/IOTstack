@@ -1,0 +1,7 @@
+  frontail:
+    image: "welteki/frontail-openhab:latest"
+    container_name: frontail
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - "./volumes/openhab/userdata/logs:/var/log/openhab2:ro"
